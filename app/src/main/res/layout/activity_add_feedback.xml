@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFeedback">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="298dp"
+        android:layout_height="48dp"
+        android:text="Add your comment"
+        android:textColor="@color/teal_700"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="411dp"
+        android:layout_height="448dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txtFname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter your Name" />
+
+        <EditText
+            android:id="@+id/txtvisit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter the Hotel name you visit" />
+
+        <EditText
+            android:id="@+id/txtcomment"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Comment" />
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            app:backgroundTint="#009688" />
+
+        <Button
+            android:id="@+id/btnFview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View"
+            app:backgroundTint="#009688" />
+
+        <Button
+            android:id="@+id/btnFupdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            app:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/btnFremove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove your comment"
+            app:backgroundTint="#810909" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFback"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:text="BACK"
+        app:backgroundTint="#915454"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+</androidx.constraintlayout.widget.ConstraintLayout>
